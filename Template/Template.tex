@@ -1,0 +1,32 @@
+%以下设置第一部分：字体和字号
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{ctex}
+    %设置整体的字体
+    \setmainfont{Times New Roman}
+    \setCJKmainfont{SimSun}
+
+    %设置行间距
+    \linespread{1.5}
+
+    %设置论文标题格式
+    %事实上LaTeX并没有修改格式的选项，如果需要修改，把字体命令直接放到\title \author等选项中即可
+    %\title{\zihao{3}\textbf{你的标题}}
+
+    %设置正文，摘要字号
+    \zihao{-4}
+
+    %设置1级标题，2级标题的字体字号
+    \CTEXsetup[ name={,、},
+                number={\chinese{section}},
+                format={\raggedright\bfseries\zihao{4}},
+                aftername={~}                          
+                                                ]{section}
+                                                
+    \CTEXsetup[ name={（,）},
+                number={\chinese{subsection}},
+                format={\raggedright\bfseries\zihao{-4}}
+                aftername={~}                              
+                                                ]{subsection}
+                                       
+        

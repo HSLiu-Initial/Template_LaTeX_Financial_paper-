@@ -1,0 +1,44 @@
+\documentclass[UTF8]{ctexart}
+%以下设置第一部分：字体和字号
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{ctex}
+    %设置整体的字体
+    \setmainfont{Times New Roman}
+    \setCJKmainfont{SimSun}
+
+    %设置行间距
+    \linespread{1.5}
+
+    %设置论文标题格式
+    %事实上LaTeX并没有修改格式的选项，如果需要修改，把字体命令直接放到\title \author等选项中即可
+    %\title{\zihao{3}\textbf{你的标题}}
+
+    %设置正文，摘要字号
+    \zihao{-4}
+
+    %设置1级标题，2级标题的字体字号
+    \CTEXsetup[ name={,、},
+                number={\chinese{section}},
+                format={\raggedright\bfseries\zihao{4}},
+                aftername={~}                          
+                                                ]{section}
+                                                
+    \CTEXsetup[ name={（,）},
+                number={\chinese{subsection}},
+                format={\raggedright\bfseries\zihao{-4}}
+                aftername={~}                              
+                                                ]{subsection}
+
+\title{BRILink项目提高印尼金融服务可获得性}
+\author{温君南 \\ 曾燕}
+
+\begin{document}
+    \maketitle
+
+    \section{案例简介}
+    印尼人民银行 (Bank Rakyat Indonesia, BRI) 推出的BRILink项目是印尼“无分支代理 (Laku Pandai) ”项目 的多种形式之一，该项目在印尼全国范围内广泛招募代理商，通过他们向对应网点的客户提供基础的金融服务。BRILink项目为印尼人民银行拓展了金融服务的空间范围与客户群体，提高了印尼民众对金融服务的可获得性 (Nuryan et al., 2020)。本节对BRILink项目的运营模式、基本业务、安全保障措施与发展状况进行介绍。
+
+    \subsection{BRILink项目的运营模式}
+    BRILink项目以代理商网点为枢纽，构建了“银行——BRILink代理商网点——客户”的运营模式。如图1所示，BRILink代理商接受印尼人民银行的委托与监督，为在网点处办理业务的客户提供金融服务，并且帮助不熟悉业务流程的客户办理业务。代理商从代理点处每笔交易的手续费中抽取50\%的佣金。BRILink项目代理商网点广泛分布在社区与自然村内的便利店、邮局中，具有较高的渗透率。
+\end{document}
